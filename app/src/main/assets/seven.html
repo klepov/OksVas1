@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://cppstudio.com/post/213/ -->
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="ru-RU"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>Введение в основы C++ для начинающих программистов</title>
+
+            <div class="content row" style="
+        max-width: 100%;
+    overflow-x: hidden;
+">
+                <div class="main col-sm-9" role="main">
+                    
+	
+	<article class="post-213 post type-post status-publish format-standard has-post-thumbnail hentry category-275 category-274">
+		<header>
+			<div class="post-title">
+				<h1 class="entry-title">Введение в C++</h1>
+			</div>
+		</header>
+
+					
+
+		<div class="col-lg-12" style="padding: 0;">
+	<script async="" src="./Введение в основы C++ для начинающих программистов_files/"></script>
+	<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-6902622887579208" data-ad-slot="2864386176"></ins>
+	<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+</div>
+<!--		-->
+        <div class="entry-content">
+            <p style="text-align: justify;">ASCII&nbsp;( от англ.&nbsp;American Standard Code for Information Interchange)&nbsp;— американский стандартный код для обмена информацией.&nbsp;ASCII&nbsp;представлена в виде таблицы печатных символов и некоторых специальных управляющих символов, каждому символу соответствует уникальный код в диапазоне от [0;255].&nbsp;ASCII&nbsp;представляет собой кодировку для представления десятичных цифр, латиницы и&nbsp;<a href="http://cppstudio.com/obuchenie_cpp/russkii-tekst-v-konsoli">кириллицы</a>, знаков препинания и управляющих символов (см. Таблица 1).</p>
+            <table class="table table-bordered table-striped table-hover" border="1" cellspacing="1" cellpadding="1" align="center">
+                <caption>Таблица 1 — Таблица символов ASCII</caption>
+                <thead>
+                <tr>
+                    <th scope="row">№</th>
+                    <th scope="col">0</th>
+                    <th scope="col">1</th>
+                    <th scope="col">2</th>
+                    <th scope="col">3</th>
+                    <th scope="col">4</th>
+                    <th scope="col">5</th>
+                    <th scope="col">6</th>
+                    <th scope="col">7</th>
+                    <th scope="col">8</th>
+                    <th scope="col">9</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">0</th>
+                    <td><strong>nul</strong></td>
+                    <td><strong>sox</strong></td>
+                    <td><strong>stx</strong></td>
+                    <td><strong>etx</strong></td>
+                    <td><strong>eot</strong></td>
+                    <td><strong>enq</strong></td>
+                    <td><strong>ack</strong></td>
+                    <td><strong>bel</strong></td>
+                    <td><strong>bs</strong></td>
+                    <td><strong>ht</strong></td>
+                </tr>
+                <tr>
+                    <th scope="row">1</th>
+                    <td><strong>nl</strong></td>
+                    <td><strong>vt</strong></td>
+                    <td><strong>ff</strong></td>
+                    <td><strong>cr</strong></td>
+                    <td><strong>so</strong></td>
+                    <td><strong>si</strong></td>
+                    <td><strong>dle</strong></td>
+                    <td><strong>dc1</strong></td>
+                    <td><strong>dc2</strong></td>
+                    <td><strong>dc3</strong></td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td><strong>dc4</strong></td>
+                    <td><strong>nak</strong></td>
+                    <td><strong>syn</strong></td>
+                    <td><strong>etb</strong></td>
+                    <td><strong>can</strong></td>
+                    <td><strong>em</strong></td>
+                    <td><strong>sub</strong></td>
+                    <td><strong>esc</strong></td>
+                    <td><strong>fs</strong></td>
+                    <td><strong>gs</strong></td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td><strong>rs</strong></td>
+                    <td><strong>us</strong></td>
+                    <td><strong>space</strong></td>
+                    <td><strong>!</strong></td>
+                    <td><strong>«</strong></td>
+                    <td><strong>#</strong></td>
+                    <td><strong>$</strong></td>
+                    <td><strong>%</strong></td>
+                    <td><strong>&amp;</strong></td>
+                    <td><strong>‘</strong></td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td><strong>(</strong></td>
+                    <td><strong>)</strong></td>
+                    <td><strong>*</strong></td>
+                    <td><strong>+</strong></td>
+                    <td><strong>,</strong></td>
+                    <td><strong>—</strong></td>
+                    <td><strong>.</strong></td>
+                    <td><strong>/</strong></td>
+                    <td><strong>0</strong></td>
+                    <td><strong>1</strong></td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td><strong>2</strong></td>
+                    <td><strong>3</strong></td>
+                    <td><strong>4</strong></td>
+                    <td><strong>5</strong></td>
+                    <td><strong>6</strong></td>
+                    <td><strong>7</strong></td>
+                    <td><strong>8</strong></td>
+                    <td><strong>9</strong></td>
+                    <td><strong>:</strong></td>
+                    <td><strong>;</strong></td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td><strong>&lt;</strong></td>
+                    <td><strong>=</strong></td>
+                    <td><strong>&gt;</strong></td>
+                    <td><strong>?</strong></td>
+                    <td><strong>@</strong></td>
+                    <td><strong>A</strong></td>
+                    <td><strong>B</strong></td>
+                    <td><strong>C</strong></td>
+                    <td><strong>D</strong></td>
+                    <td><strong>E</strong></td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td><strong>F</strong></td>
+                    <td><strong>G</strong></td>
+                    <td><strong>H</strong></td>
+                    <td><strong>I</strong></td>
+                    <td><strong>J</strong></td>
+                    <td><strong>K</strong></td>
+                    <td><strong>L</strong></td>
+                    <td><strong>M</strong></td>
+                    <td><strong>N</strong></td>
+                    <td><strong>O</strong></td>
+                </tr>
+                <tr>
+                    <th scope="row">8</th>
+                    <td><strong>P</strong></td>
+                    <td><strong>Q</strong></td>
+                    <td><strong>R</strong></td>
+                    <td><strong>S</strong></td>
+                    <td><strong>T</strong></td>
+                    <td><strong>U</strong></td>
+                    <td><strong>V</strong></td>
+                    <td><strong>W</strong></td>
+                    <td><strong>X</strong></td>
+                    <td><strong>Y</strong></td>
+                </tr>
+                <tr>
+                    <th scope="row">9</th>
+                    <td><strong>Z</strong></td>
+                    <td><strong>[</strong></td>
+                    <td><strong>\</strong></td>
+                    <td><strong>]</strong></td>
+                    <td><strong>^</strong></td>
+                    <td><strong>_</strong></td>
+                    <td><strong>‘</strong></td>
+                    <td><strong>a</strong></td>
+                    <td><strong>b</strong></td>
+                    <td><strong>c</strong></td>
+                </tr>
+                <tr>
+                    <th scope="row">10</th>
+                    <td><strong>d</strong></td>
+                    <td><strong>e</strong></td>
+                    <td><strong>f</strong></td>
+                    <td><strong>g</strong></td>
+                    <td><strong>h</strong></td>
+                    <td><strong>i</strong></td>
+                    <td><strong>j</strong></td>
+                    <td><strong>k</strong></td>
+                    <td><strong>l</strong></td>
+                    <td><strong>m</strong></td>
+                </tr>
+                <tr>
+                    <th scope="row">11</th>
+                    <td><strong>n</strong></td>
+                    <td><strong>o</strong></td>
+                    <td><strong>p</strong></td>
+                    <td><strong>q</strong></td>
+                    <td><strong>r</strong></td>
+                    <td><strong>s</strong></td>
+                    <td><strong>t</strong></td>
+                    <td><strong>u</strong></td>
+                    <td><strong>v</strong></td>
+                    <td><strong>w</strong></td>
+                </tr>
+                <tr>
+                    <th scope="row">12</th>
+                    <td><strong>x</strong></td>
+                    <td><strong>y</strong></td>
+                    <td><strong>z</strong></td>
+                    <td><strong>{</strong></td>
+                    <td><strong>|</strong></td>
+                    <td><strong>}</strong></td>
+                    <td><strong>~</strong></td>
+                    <td><strong>del</strong></td>
+                    <td><strong>А</strong></td>
+                    <td><strong>Б</strong></td>
+                </tr>
+                <tr>
+                    <th scope="row">13</th>
+                    <td><strong>В</strong></td>
+                    <td><strong>Г</strong></td>
+                    <td><strong>Д</strong></td>
+                    <td><strong>Е</strong></td>
+                    <td><strong>Ж</strong></td>
+                    <td><strong>З</strong></td>
+                    <td><strong>И</strong></td>
+                    <td><strong>Й</strong></td>
+                    <td><strong>К</strong></td>
+                    <td><strong>Л</strong></td>
+                </tr>
+                <tr>
+                    <th scope="row">14</th>
+                    <td><strong>М</strong></td>
+                    <td><strong>Н</strong></td>
+                    <td><strong>О</strong></td>
+                    <td><strong>П</strong></td>
+                    <td><strong>Р</strong></td>
+                    <td><strong>С</strong></td>
+                    <td><strong>Т</strong></td>
+                    <td><strong>У</strong></td>
+                    <td><strong>Ф</strong></td>
+                    <td><strong>Х</strong></td>
+                </tr>
+                <tr>
+                    <th scope="row">15</th>
+                    <td><strong>Ц</strong></td>
+                    <td><strong>Ч</strong></td>
+                    <td><strong>Ш</strong></td>
+                    <td><strong>Щ</strong></td>
+                    <td><strong>ъ</strong></td>
+                    <td><strong>Ы</strong></td>
+                    <td><strong>Ь</strong></td>
+                    <td><strong>Э</strong></td>
+                    <td><strong>Ю</strong></td>
+                    <td><strong>Я</strong></td>
+                </tr>
+                <tr>
+                    <th scope="row">16</th>
+                    <td><strong>а</strong></td>
+                    <td><strong>б</strong></td>
+                    <td><strong>в</strong></td>
+                    <td><strong>г</strong></td>
+                    <td><strong>д</strong></td>
+                    <td><strong>е</strong></td>
+                    <td><strong>ж</strong></td>
+                    <td><strong>з</strong></td>
+                    <td><strong>и</strong></td>
+                    <td><strong>й</strong></td>
+                </tr>
+                <tr>
+                    <th scope="row">17</th>
+                    <td><strong>к</strong></td>
+                    <td><strong>л</strong></td>
+                    <td><strong>м</strong></td>
+                    <td><strong>н</strong></td>
+                    <td><strong>о</strong></td>
+                    <td><strong>п</strong></td>
+                    <td><img alt="" src="/wp-content/images/article/176.JPG"></td>
+                    <td><img alt="" src="/wp-content/images/article/177.JPG" width="21" height="30"></td>
+                    <td><img alt="" src="/wp-content/images/article/178.JPG" width="20" height="31"></td>
+                    <td><img alt="" src="/wp-content/images/article/179.JPG" width="17" height="30"></td>
+                </tr>
+                <tr>
+                    <th scope="row">18</th>
+                    <td><img alt="" src="/wp-content/images/article/180.JPG" width="16" height="31"></td>
+                    <td><img alt="" src="/wp-content/images/article/181.JPG" width="22" height="28"></td>
+                    <td><img alt="" src="/wp-content/images/article/182.JPG" width="19" height="30"></td>
+                    <td><img alt="" src="/wp-content/images/article/183.JPG" width="20" height="20"></td>
+                    <td><img alt="" src="/wp-content/images/article/184.JPG" width="22" height="25"></td>
+                    <td><img alt="" src="/wp-content/images/article/185.JPG" width="24" height="31"></td>
+                    <td><img alt="" src="/wp-content/images/article/186.JPG" width="20" height="30"></td>
+                    <td><img alt="" src="/wp-content/images/article/187.JPG" width="20" height="24"></td>
+                    <td><img alt="" src="/wp-content/images/article/188.JPG" width="20" height="21"></td>
+                    <td><img alt="" src="/wp-content/images/article/189.JPG" width="20" height="23"></td>
+                </tr>
+                <tr>
+                    <th scope="row">19</th>
+                    <td><img alt="" src="/wp-content/images/article/190.JPG" width="17" height="26"></td>
+                    <td><img alt="" src="/wp-content/images/article/191.JPG" width="17" height="22"></td>
+                    <td><img alt="" src="/wp-content/images/article/192.JPG" width="19" height="23"></td>
+                    <td><img alt="" src="/wp-content/images/article/193.JPG" width="29" height="25"></td>
+                    <td><img alt="" src="/wp-content/images/article/194.JPG" width="19" height="20"></td>
+                    <td><img alt="" src="/wp-content/images/article/195.JPG" width="18" height="31"></td>
+                    <td><img alt="" src="/wp-content/images/article/196.JPG" width="28" height="15"></td>
+                    <td><img alt="" src="/wp-content/images/article/197.JPG" width="20" height="32"></td>
+                    <td><img alt="" src="/wp-content/images/article/198.JPG" width="18" height="30"></td>
+                    <td><img alt="" src="/wp-content/images/article/199.JPG" width="19" height="34"></td>
+                </tr>
+                <tr>
+                    <th scope="row">20</th>
+                    <td><img alt="" src="/wp-content/images/article/200.JPG" width="20" height="21"></td>
+                    <td><img alt="" src="/wp-content/images/article/201.JPG" width="20" height="23"></td>
+                    <td><img alt="" src="/wp-content/images/article/202.JPG" width="20" height="18"></td>
+                    <td><img alt="" src="/wp-content/images/article/203.JPG" width="23" height="24"></td>
+                    <td><img alt="" src="/wp-content/images/article/204.JPG" width="20" height="34"></td>
+                    <td><img alt="" src="/wp-content/images/article/205.JPG" width="24" height="17"></td>
+                    <td><img alt="" src="/wp-content/images/article/206.JPG" width="20" height="32"></td>
+                    <td><img alt="" src="/wp-content/images/article/207.JPG" width="20" height="20"></td>
+                    <td><img alt="" src="/wp-content/images/article/208.JPG" width="22" height="24"></td>
+                    <td><img alt="" src="/wp-content/images/article/209.JPG" width="25" height="22"></td>
+                </tr>
+                <tr>
+                    <th scope="row">21</th>
+                    <td><img alt="" src="/wp-content/images/article/210.JPG" width="21" height="18"></td>
+                    <td><img alt="" src="/wp-content/images/article/211.JPG" width="19" height="19"></td>
+                    <td><img alt="" src="/wp-content/images/article/212.JPG" width="19" height="22"></td>
+                    <td><img alt="" src="/wp-content/images/article/213.JPG" width="17" height="24"></td>
+                    <td><img alt="" src="/wp-content/images/article/214.JPG" width="19" height="21"></td>
+                    <td><img alt="" src="/wp-content/images/article/215.JPG" width="21" height="33"></td>
+                    <td><img alt="" src="/wp-content/images/article/216.JPG" width="27" height="30"></td>
+                    <td><img alt="" src="/wp-content/images/article/217.JPG" width="19" height="22"></td>
+                    <td><img alt="" src="/wp-content/images/article/218.JPG" width="26" height="22"></td>
+                    <td><img alt="" src="/wp-content/images/article/219.JPG" width="20" height="34"></td>
+                </tr>
+                <tr>
+                    <th scope="row">22</th>
+                    <td><img alt="" src="/wp-content/images/article/220.JPG" width="24" height="21"></td>
+                    <td><img alt="" src="/wp-content/images/article/221.JPG" width="15" height="31"></td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;<img alt="" src="/wp-content/images/article/222.JPG" width="16" height="32"></td>
+                    <td><img alt="" src="/wp-content/images/article/223.JPG" width="22" height="19"></td>
+                    <td><strong>р</strong></td>
+                    <td><strong>с</strong></td>
+                    <td><strong>т</strong></td>
+                    <td><strong>у</strong></td>
+                    <td><strong>ф</strong></td>
+                    <td><strong>х</strong></td>
+                </tr>
+                <tr>
+                    <th scope="row">23</th>
+                    <td><strong>ц</strong></td>
+                    <td><strong>ч</strong></td>
+                    <td><strong>ш</strong></td>
+                    <td><strong>щ</strong></td>
+                    <td><strong>ъ</strong></td>
+                    <td><strong>ы</strong></td>
+                    <td><strong>ь</strong></td>
+                    <td><strong>э</strong></td>
+                    <td><strong>ю</strong></td>
+                    <td><strong>я</strong></td>
+                </tr>
+                <tr>
+                    <th scope="row">24</th>
+                    <td><strong>Ё</strong></td>
+                    <td><strong>ё</strong></td>
+                    <td><strong>Є</strong></td>
+                    <td><strong>є</strong></td>
+                    <td><strong>Ї</strong></td>
+                    <td><strong>ї</strong></td>
+                    <td><strong>Ў</strong></td>
+                    <td><strong>ў</strong></td>
+                    <td><strong>°</strong></td>
+                    <td><strong>·</strong></td>
+                </tr>
+                <tr>
+                    <th scope="row">25</th>
+                    <td><strong>·</strong></td>
+                    <td><strong><img style="border: 0px;" alt="" src="/wp-content/images/article/251.png" width="17" height="26" border="0"></strong></td>
+                    <td><strong>№</strong></td>
+                    <td><strong>¤</strong></td>
+                    <td><strong><img class="aligncenter" style="border: 0px;" alt="" src="/wp-content/images/article/254.png" width="18" height="18" border="0"></strong></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+            <p style="text-align: justify;">Таблица 1 представляет собой полный набор символов ASCII. В таблице ASCII, символы с нулевого по 31 включительно, являются управляющими ASCII символами. Это значит, что данные символы выполняют некоторые действия, причём эти символы печатаются с сочетанием клавиши&nbsp;<code>Ctrl</code>. В таблице 1 записано обозначение управляющих ASCII символов, но не их отображение при печати. Остальные же символы с 32 по 254 не являются управляющими и имеют вид как и в таблице 1.</p><!-- adman_adcode (middle, 1) --><!-- Яндекс.Директ -->
+            <div id="yandex_ad_center"></div>
+            <script type="text/javascript">
+(function(w, d, n, s, t) {
+    w[n] = w[n] || [];
+    w[n].push(function() {
+        Ya.Direct.insertInto(142193, "yandex_ad_center", {
+            ad_format: "direct",
+                    font_size: '14px',
+                    type: "728x90",
+                    links_underline: false,
+                    site_bg_color: "FFFFFF",
+                    title_color: "428BCA",
+                    url_color: "777777",
+                    text_color: "333333",
+                    hover_color: "0088CC",
+                    favicon: true,
+                    no_sitelinks: false
+        });
+    });
+    t = d.getElementsByTagName("script")[0];
+    s = d.createElement("script");
+    s.src = "//an.yandex.ru/system/context.js";
+    s.type = "text/javascript";
+    s.async = true;
+    t.parentNode.insertBefore(s, t);
+})(window, document, "yandex_context_callbacks");
+</script><!-- /adman_adcode (middle) -->
+            <p style="text-align: justify;">Благодаря таблице ASCII появилась новая форма представления изображений, с помощью символов таблицы ASCII.</p>
+            <p style="text-align: justify;">ASCII art&nbsp; — форма изобразительного искусства, использующая символы ASCII для представления изображений. При создании такого изображения используются символы букв, цифр и знаков пунктуации. В ASCII art используется около 95 символов таблицы ASCII. Так как национальные представления таблиц ASCII различаются, поэтому остальные 160 символов не используются в искусстве ASCII.</p>
+            <div><div id="highlighter_762205" class="syntaxhighlighter notranslate no_translate cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;</code><code class="cpp comments">// искусство ASCII (ASCII art)надпись сгенерирована программой</code></div><div class="line number2 index1 alt1"><code class="cpp comments">/*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </code></div><div class="line number3 index2 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp comments">/\ \__&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /\ \&nbsp;&nbsp; __&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </code></div><div class="line number4 index3 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp comments">___&nbsp;&nbsp; _____&nbsp;&nbsp;&nbsp; _____&nbsp;&nbsp;&nbsp;&nbsp; ____\ \ ,_\&nbsp; __&nbsp; __&nbsp;&nbsp; \_\ \ /\_\&nbsp;&nbsp;&nbsp;&nbsp; ___&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ___&nbsp;&nbsp;&nbsp;&nbsp; ___&nbsp;&nbsp;&nbsp;&nbsp; ___ ___&nbsp;&nbsp;&nbsp; </code></div><div class="line number5 index4 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp comments">/'___\/\ '__`\ /\ '__`\&nbsp; /',__\\ \ \/ /\ \/\ \&nbsp; /'_` \\/\ \&nbsp;&nbsp; / __`\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /'___\&nbsp; / __`\ /' __` __`\&nbsp; </code></div><div class="line number6 index5 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp comments">/\ \__/\ \ \L\ \\ \ \L\ \/\__, `\\ \ \_\ \ \_\ \/\ \L\ \\ \ \ /\ \L\ \ __ /\ \__/ /\ \L\ \/\ \/\ \/\ \ </code></div><div class="line number7 index6 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp comments">\ \____\\ \ ,__/ \ \ ,__/\/\____/ \ \__\\ \____/\ \___,_\\ \_\\ \____//\_\\ \____\\ \____/\ \_\ \_\ \_\</code></div><div class="line number8 index7 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp comments">\/____/ \ \ \/&nbsp;&nbsp; \ \ \/&nbsp; \/___/&nbsp;&nbsp; \/__/ \/___/&nbsp; \/__,_ / \/_/ \/___/ \/_/ \/____/ \/___/&nbsp; \/_/\/_/\/_/</code></div><div class="line number9 index8 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp comments">\ \_\&nbsp;&nbsp;&nbsp; \ \_\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </code></div><div class="line number10 index9 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp comments">\/_/&nbsp;&nbsp;&nbsp;&nbsp; \/_/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; */</code></div></div></td></tr></tbody></table></div></div>
+            <p style="text-align: justify;">Изначально ASCII art выполнялось вручную, и это была рутинная работа. Сейчас существует огромное количество программ, так называемых, генераторов ASCII art. Такие программы автоматически создают ASCII изображения.</p>
+        </div>
+
+		
+		
+		<div class="col-lg-12" style="padding: 0;">
+	<script async="" src="./Введение в основы C++ для начинающих программистов_files/"></script>
+	<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-6902622887579208" data-ad-slot="4341119372"></ins>
+	<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+</div>
+							</body></html>

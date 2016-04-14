@@ -1,0 +1,590 @@
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"
+      lang="ru-RU"><!--<![endif]-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Введение в основы C++ для начинающих программистов</title>
+
+    <script src="blob:http%3A//localhost%3A63342/1729c6c3-2ac9-4364-8f80-42d4220256cb"></script>
+    <meta name="chromesniffer" id="chromesniffer_meta" content="{}">
+    <script type="text/javascript"
+            src="chrome-extension://homgcnaoacgigpkkljjjekpignblkeae/detector.js"></script>
+    <script src="blob:http%3A//localhost%3A63342/ee7a8e88-526a-46ac-9eda-f9d29c6ef4c3"
+            charset="UTF-8"></script>
+</head>
+<body>
+<div class="content row" style="
+        max-width: 100%;
+    overflow-x: hidden;
+">
+    <div class="main col-sm-9" role="main">
+
+
+        <article
+                class="post-213 post type-post status-publish format-standard has-post-thumbnail hentry category-275 category-274">
+            <header>
+                <div class="post-title">
+                    <h1 class="entry-title">Введение в C++</h1>
+                </div>
+            </header>
+
+
+            <div class="col-lg-12" style="padding: 0;">
+                <script src="//an.yandex.ru/system/context.js" type="text/javascript"
+                        async=""></script>
+                <script async=""
+                        src="./Введение в основы C++ для начинающих программистов_files/"></script>
+                <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px"
+                     data-ad-client="ca-pub-6902622887579208" data-ad-slot="2864386176"></ins>
+                <script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+
+                </script>
+            </div>
+            <!--		-->
+            <div class="entry-content">
+                <p style="text-align: justify;">Думаю, понятно, для чего нужны арифметические
+                    операции, арифметика в программировании намного проще чем в математике. Нас
+                    интересуют следующие арифметические операции в C++:</p>
+                <p style="text-align: justify;"><strong><code>+</code></strong>&nbsp;— сложение;</p>
+                <p style="text-align: justify;"><strong><code>-</code></strong>&nbsp;— вычитание;
+                </p>
+                <p style="text-align: justify;"><strong><code>*</code></strong>&nbsp;— умножение;
+                </p>
+                <p style="text-align: justify;"><strong><code>/</code></strong>&nbsp;— деление;</p>
+                <p style="text-align: justify;"><strong><code>%</code></strong>&nbsp;— остаток от
+                    деления.</p>
+                <p style="text-align: justify;">Ниже представлен программный код использующий
+                    арифметические операции в C++.</p>
+                <div>
+                    <div id="highlighter_563434"
+                         class="syntaxhighlighter notranslate no_translate cpp">
+                        <div class="toolbar"><span><a href="#"
+                                                      class="toolbar_item command_help help">?</a></span>
+                        </div>
+                        <table border="0" cellpadding="0" cellspacing="0">
+                            <tbody>
+                            <tr>
+                                <td class="gutter">
+                                    <div class="line number1 index0 alt2">1</div>
+                                    <div class="line number2 index1 alt1">2</div>
+                                    <div class="line number3 index2 alt2">3</div>
+                                    <div class="line number4 index3 alt1">4</div>
+                                    <div class="line number5 index4 alt2">5</div>
+                                    <div class="line number6 index5 alt1">6</div>
+                                    <div class="line number7 index6 alt2">7</div>
+                                    <div class="line number8 index7 alt1">8</div>
+                                    <div class="line number9 index8 alt2">9</div>
+                                    <div class="line number10 index9 alt1">10</div>
+                                    <div class="line number11 index10 alt2">11</div>
+                                    <div class="line number12 index11 alt1">12</div>
+                                    <div class="line number13 index12 alt2">13</div>
+                                    <div class="line number14 index13 alt1">14</div>
+                                    <div class="line number15 index14 alt2">15</div>
+                                    <div class="line number16 index15 alt1">16</div>
+                                    <div class="line number17 index16 alt2">17</div>
+                                    <div class="line number18 index17 alt1">18</div>
+                                    <div class="line number19 index18 alt2">19</div>
+                                    <div class="line number20 index19 alt1">20</div>
+                                    <div class="line number21 index20 alt2">21</div>
+                                    <div class="line number22 index21 alt1">22</div>
+                                    <div class="line number23 index22 alt2">23</div>
+                                    <div class="line number24 index23 alt1">24</div>
+                                    <div class="line number25 index24 alt2">25</div>
+                                    <div class="line number26 index25 alt1">26</div>
+                                </td>
+                                <td class="code">
+                                    <div class="container">
+                                        <div class="line number1 index0 alt2"><code
+                                                class="cpp comments">// arithmetic.cpp: определяет
+                                            точку входа для консольного приложения.</code></div>
+                                        <div class="line number2 index1 alt1">&nbsp;</div>
+                                        <div class="line number3 index2 alt2"><code
+                                                class="cpp preprocessor">#include "stdafx.h"</code>
+                                        </div>
+                                        <div class="line number4 index3 alt1"><code
+                                                class="cpp preprocessor">#include
+                                            &lt;iostream&gt;</code></div>
+                                        <div class="line number5 index4 alt2"><code
+                                                class="cpp keyword bold">using</code> <code
+                                                class="cpp keyword bold">namespace</code> <code
+                                                class="cpp plain">std;</code></div>
+                                        <div class="line number6 index5 alt1">&nbsp;</div>
+                                        <div class="line number7 index6 alt2"><code
+                                                class="cpp color1 bold">int</code> <code
+                                                class="cpp plain">_tmain(</code><code
+                                                class="cpp color1 bold">int</code> <code
+                                                class="cpp plain">argc, </code><code
+                                                class="cpp color1 bold">char</code><code
+                                                class="cpp plain">* argv[])</code></div>
+                                        <div class="line number8 index7 alt1"><code
+                                                class="cpp plain">{</code></div>
+                                        <div class="line number9 index8 alt2"><code
+                                                class="cpp spaces">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                class="cpp color1 bold">double</code> <code
+                                                class="cpp plain">sum, razn, </code><code
+                                                class="cpp functions bold">pow</code><code
+                                                class="cpp plain">, </code><code
+                                                class="cpp functions bold">div</code><code
+                                                class="cpp plain">; </code><code
+                                                class="cpp comments">// объявление переменных через
+                                            запятую</code></div>
+                                        <div class="line number10 index9 alt1"><code
+                                                class="cpp spaces">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                class="cpp color1 bold">double</code> <code
+                                                class="cpp plain">a1; </code><code
+                                                class="cpp comments">// отдельное объявление
+                                            переменной a1</code></div>
+                                        <div class="line number11 index10 alt2"><code
+                                                class="cpp spaces">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                class="cpp color1 bold">double</code> <code
+                                                class="cpp plain">a2; </code><code
+                                                class="cpp comments">// отдельное объявление
+                                            переменной a2</code></div>
+                                        <div class="line number12 index11 alt1"><code
+                                                class="cpp spaces">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">cout
+                                            &lt;&lt; </code><code class="cpp string">"Vvedite pervoe
+                                            chislo: "</code><code class="cpp plain">;</code></div>
+                                        <div class="line number13 index12 alt2"><code
+                                                class="cpp spaces">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">cin
+                                            &gt;&gt; a1;</code></div>
+                                        <div class="line number14 index13 alt1"><code
+                                                class="cpp spaces">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">cout
+                                            &lt;&lt; </code><code class="cpp string">"Vvedite vtoroe
+                                            chislo: "</code><code class="cpp plain">;</code></div>
+                                        <div class="line number15 index14 alt2"><code
+                                                class="cpp spaces">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">cin
+                                            &gt;&gt; a2;</code></div>
+                                        <div class="line number16 index15 alt1"><code
+                                                class="cpp spaces">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">sum&nbsp;
+                                            = a1 + a2;&nbsp; </code><code class="cpp comments">//
+                                            операция сложения </code></div>
+                                        <div class="line number17 index16 alt2"><code
+                                                class="cpp spaces">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">razn
+                                            = a1 - a2;&nbsp; </code><code class="cpp comments">//
+                                            операция вычитания </code></div>
+                                        <div class="line number18 index17 alt1"><code
+                                                class="cpp spaces">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                class="cpp functions bold">pow</code>&nbsp; <code
+                                                class="cpp plain">= a1 * a2;&nbsp; </code><code
+                                                class="cpp comments">// операция умножения</code>
+                                        </div>
+                                        <div class="line number19 index18 alt2"><code
+                                                class="cpp spaces">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                class="cpp functions bold">div</code>&nbsp; <code
+                                                class="cpp plain">= a1 / a2;&nbsp; </code><code
+                                                class="cpp comments">// операция деления </code>
+                                        </div>
+                                        <div class="line number20 index19 alt1"><code
+                                                class="cpp spaces">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">cout
+                                            &lt;&lt; a1 &lt;&lt; </code><code
+                                                class="cpp string">"+"</code> <code
+                                                class="cpp plain">&lt;&lt; a2 &lt;&lt; </code><code
+                                                class="cpp string">"="</code> <code
+                                                class="cpp plain">&lt;&lt; sum&nbsp; &lt;&lt;
+                                            endl;</code></div>
+                                        <div class="line number21 index20 alt2"><code
+                                                class="cpp spaces">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">cout
+                                            &lt;&lt; a1 &lt;&lt; </code><code
+                                                class="cpp string">"-"</code> <code
+                                                class="cpp plain">&lt;&lt; a2 &lt;&lt; </code><code
+                                                class="cpp string">"="</code> <code
+                                                class="cpp plain">&lt;&lt; razn &lt;&lt;
+                                            endl;</code></div>
+                                        <div class="line number22 index21 alt1"><code
+                                                class="cpp spaces">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">cout
+                                            &lt;&lt; a1 &lt;&lt; </code><code
+                                                class="cpp string">"*"</code> <code
+                                                class="cpp plain">&lt;&lt; a2 &lt;&lt; </code><code
+                                                class="cpp string">"="</code> <code
+                                                class="cpp plain">&lt;&lt; </code><code
+                                                class="cpp functions bold">pow</code>&nbsp; <code
+                                                class="cpp plain">&lt;&lt; endl;</code></div>
+                                        <div class="line number23 index22 alt2"><code
+                                                class="cpp spaces">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">cout
+                                            &lt;&lt; a1 &lt;&lt; </code><code
+                                                class="cpp string">"/"</code> <code
+                                                class="cpp plain">&lt;&lt; a2 &lt;&lt; </code><code
+                                                class="cpp string">"="</code> <code
+                                                class="cpp plain">&lt;&lt; </code><code
+                                                class="cpp functions bold">div</code>&nbsp; <code
+                                                class="cpp plain">&lt;&lt; endl;</code></div>
+                                        <div class="line number24 index23 alt1"><code
+                                                class="cpp spaces">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                class="cpp functions bold">system</code> <code
+                                                class="cpp plain">(</code><code class="cpp string">"pause"</code><code
+                                                class="cpp plain">);</code></div>
+                                        <div class="line number25 index24 alt2"><code
+                                                class="cpp spaces">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                class="cpp keyword bold">return</code> <code
+                                                class="cpp plain">0;</code></div>
+                                        <div class="line number26 index25 alt1"><code
+                                                class="cpp plain">}</code></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <a href="5_1">начать!</a>
+                <p style="text-align: justify;"><span
+                        style="line-height: 1.428571429;">В </span><strong
+                        style="line-height: 1.428571429;">строке 9</strong><span
+                        style="line-height: 1.428571429;"> объявляются переменные с именами </span><code>sum</code><span
+                        style="line-height: 1.428571429;">, </span><code>razn</code><span
+                        style="line-height: 1.428571429;">, </span><code>pow</code><span
+                        style="line-height: 1.428571429;">, </span><code>div</code><span
+                        style="line-height: 1.428571429;"> тип данных у которых </span><code>double</code><span
+                        style="line-height: 1.428571429;"> – вещественный тип данных (то есть эти переменные могут хранить такие числа: 0.99; 3.0; 21.6; — 43.15; 345.342).</span>
+                </p>
+                <div class="alert alert-success">Любые переменные можно использовать только после
+                    объявления. Переменные можно также и инициализировать при объявлении, пример:
+                </div>
+                <div>
+                    <div id="highlighter_841159"
+                         class="syntaxhighlighter notranslate no_translate cpp">
+                        <div class="toolbar"><span><a href="#"
+                                                      class="toolbar_item command_help help">?</a></span>
+                        </div>
+                        <table border="0" cellpadding="0" cellspacing="0">
+                            <tbody>
+                            <tr>
+                                <td class="gutter">
+                                    <div class="line number1 index0 alt2">1</div>
+                                </td>
+                                <td class="code">
+                                    <div class="container">
+                                        <div class="line number1 index0 alt2"><code
+                                                class="cpp color1 bold">double</code> <code
+                                                class="cpp plain">sum = 10;</code></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div><!-- adman_adcode (middle, 1) --><!-- Яндекс.Директ -->
+                <div id="yandex_ad_center"></div>
+                <script type="text/javascript">
+(function(w, d, n, s, t) {
+    w[n] = w[n] || [];
+    w[n].push(function() {
+        Ya.Direct.insertInto(142193, "yandex_ad_center", {
+            ad_format: "direct",
+                    font_size: '14px',
+                    type: "728x90",
+                    links_underline: false,
+                    site_bg_color: "FFFFFF",
+                    title_color: "428BCA",
+                    url_color: "777777",
+                    text_color: "333333",
+                    hover_color: "0088CC",
+                    favicon: true,
+                    no_sitelinks: false
+        });
+    });
+    t = d.getElementsByTagName("script")[0];
+    s = d.createElement("script");
+    s.src = "//an.yandex.ru/system/context.js";
+    s.type = "text/javascript";
+    s.async = true;
+    t.parentNode.insertBefore(s, t);
+})(window, document, "yandex_context_callbacks");
+
+                </script><!-- /adman_adcode (middle) -->
+                <p>Это значит, что мы объявили переменную с именем <code>sum</code> типа <code>double</code>
+                    и присвоили ей значение <strong>10</strong>. Переменные можно инициализировать и
+                    объявлять как через запятую так и по отдельности каждую (<strong>строки 10 и
+                        11</strong>).</p>
+                <div>
+                    <div id="highlighter_719627"
+                         class="syntaxhighlighter notranslate no_translate cpp">
+                        <div class="toolbar"><span><a href="#"
+                                                      class="toolbar_item command_help help">?</a></span>
+                        </div>
+                        <table border="0" cellpadding="0" cellspacing="0">
+                            <tbody>
+                            <tr>
+                                <td class="gutter">
+                                    <div class="line number1 index0 alt2">1</div>
+                                </td>
+                                <td class="code">
+                                    <div class="container">
+                                        <div class="line number1 index0 alt2"><code
+                                                class="cpp plain">cin &gt;&gt; a1; </code><code
+                                                class="cpp comments">// прочитать первое число в
+                                            переменную а1.</code></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div>
+                    <div id="highlighter_247358"
+                         class="syntaxhighlighter notranslate no_translate cpp">
+                        <div class="toolbar"><span><a href="#"
+                                                      class="toolbar_item command_help help">?</a></span>
+                        </div>
+                        <table border="0" cellpadding="0" cellspacing="0">
+                            <tbody>
+                            <tr>
+                                <td class="gutter">
+                                    <div class="line number1 index0 alt2">1</div>
+                                </td>
+                                <td class="code">
+                                    <div class="container">
+                                        <div class="line number1 index0 alt2"><code
+                                                class="cpp plain">cin &gt;&gt; a2; </code><code
+                                                class="cpp comments">// прочитать второе число в
+                                            переменную а2.</code></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <p>Символы <strong><code>&gt;&gt;</code></strong>&nbsp;называются операцией
+                    извлечения из потока. Данные символы используются вместе с оператором ввода
+                    <strong><code>cin</code></strong>.</p>
+                <div>
+                    <div id="highlighter_237191"
+                         class="syntaxhighlighter notranslate no_translate cpp">
+                        <div class="toolbar"><span><a href="#"
+                                                      class="toolbar_item command_help help">?</a></span>
+                        </div>
+                        <table border="0" cellpadding="0" cellspacing="0">
+                            <tbody>
+                            <tr>
+                                <td class="gutter">
+                                    <div class="line number1 index0 alt2">1</div>
+                                    <div class="line number2 index1 alt1">2</div>
+                                    <div class="line number3 index2 alt2">3</div>
+                                    <div class="line number4 index3 alt1">4</div>
+                                </td>
+                                <td class="code">
+                                    <div class="container">
+                                        <div class="line number1 index0 alt2"><code
+                                                class="cpp plain">sum&nbsp; = a1 + a2;&nbsp; </code><code
+                                                class="cpp comments">// сложить два числа и записать
+                                            их сумму в переменную sum</code></div>
+                                        <div class="line number2 index1 alt1"><code
+                                                class="cpp plain">razn = a1 - a2; </code><code
+                                                class="cpp comments">// вычесть из первого числа
+                                            второе и записать их разность в переменную razn</code>
+                                        </div>
+                                        <div class="line number3 index2 alt2"><code
+                                                class="cpp functions bold">pow</code>&nbsp; <code
+                                                class="cpp plain">= a1 * a2;&nbsp; </code><code
+                                                class="cpp comments">// умножить два числа и
+                                            записать их произведение в переменную pow</code></div>
+                                        <div class="line number4 index3 alt1"><code
+                                                class="cpp functions bold">div</code>&nbsp; <code
+                                                class="cpp plain">= a1 / a2;&nbsp; </code><code
+                                                class="cpp comments">// разделить первое число на
+                                            второе и записать их частное в переменную div</code>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <p style="text-align: justify;" align="justify">C&nbsp;<strong>20-й по 23-ю
+                    строки</strong>&nbsp;мы выводим результаты наших арифметических операций. Также
+                    как и в математике в языке программирования С++ с помощью скобочек формируется
+                    порядок вычислений в сложных выражениях, например:&nbsp;<strong><code>((a+b)*c)-d</code></strong><br>
+                    Первое действие:&nbsp;<strong><code>a+b</code></strong>;<br>
+                    Второе действие: умножение на&nbsp;<strong><code>с</code></strong>;<br>
+                    Третье действие: вычитание&nbsp;<strong><code>d</code></strong>;</p>
+                <p style="text-align: justify;" align="justify">Результат работы программы,
+                    выполняющей четыре арифметические операции <strong><code>+</code></strong>,&nbsp;
+                    <strong><code>-</code></strong>,&nbsp; <strong><code>*</code></strong>,&nbsp;
+                    <strong><code>/</code></strong>, над двумя введенными числами,&nbsp; показан
+                    ниже (см.Рисунок 1).</p>
+                <div class="code_window">
+                    <div class="code_window_title">CppStudio.com</div>
+                    <div class="code_window_content">
+<pre>Vvedite pervoe chislo: 10
+Vvedite vtoroe chislo: 5
+10+5=15
+10-5=5
+10*5=50
+10/5=2
+Для продолжения нажмите любую клавишу . . .</pre>
+                    </div>
+                </div>
+                <p style="text-align: center;">Рисунок 1 — Арифметические операции C++</p>
+                <p style="text-align: justify;">Рассмотрим еще одну арифметическую
+                    операцию&nbsp;<strong><code>%</code></strong>&nbsp;— остаток от деления, для
+                    этого &nbsp; изучим подробно следующий код программы:</p>
+                <div>
+                    <div id="highlighter_948808"
+                         class="syntaxhighlighter notranslate no_translate cpp">
+                        <div class="toolbar"><span><a href="#"
+                                                      class="toolbar_item command_help help">?</a></span>
+                        </div>
+                        <table border="0" cellpadding="0" cellspacing="0">
+                            <tbody>
+                            <tr>
+                                <td class="gutter">
+                                    <div class="line number1 index0 alt2">1</div>
+                                    <div class="line number2 index1 alt1">2</div>
+                                    <div class="line number3 index2 alt2">3</div>
+                                    <div class="line number4 index3 alt1">4</div>
+                                    <div class="line number5 index4 alt2">5</div>
+                                    <div class="line number6 index5 alt1">6</div>
+                                    <div class="line number7 index6 alt2">7</div>
+                                    <div class="line number8 index7 alt1">8</div>
+                                    <div class="line number9 index8 alt2">9</div>
+                                    <div class="line number10 index9 alt1">10</div>
+                                    <div class="line number11 index10 alt2">11</div>
+                                    <div class="line number12 index11 alt1">12</div>
+                                    <div class="line number13 index12 alt2">13</div>
+                                    <div class="line number14 index13 alt1">14</div>
+                                    <div class="line number15 index14 alt2">15</div>
+                                </td>
+                                <td class="code">
+                                    <div class="container">
+                                        <div class="line number1 index0 alt2"><code
+                                                class="cpp comments">// ost_division.cpp: определяет
+                                            точку входа для консольного приложения.</code></div>
+                                        <div class="line number2 index1 alt1">&nbsp;</div>
+                                        <div class="line number3 index2 alt2"><code
+                                                class="cpp preprocessor">#include "stdafx.h"</code>
+                                        </div>
+                                        <div class="line number4 index3 alt1"><code
+                                                class="cpp preprocessor">#include
+                                            &lt;iostream&gt;</code></div>
+                                        <div class="line number5 index4 alt2"><code
+                                                class="cpp keyword bold">using</code> <code
+                                                class="cpp keyword bold">namespace</code> <code
+                                                class="cpp plain">std;</code></div>
+                                        <div class="line number6 index5 alt1">&nbsp;</div>
+                                        <div class="line number7 index6 alt2"><code
+                                                class="cpp color1 bold">int</code> <code
+                                                class="cpp plain">_tmain(</code><code
+                                                class="cpp color1 bold">int</code> <code
+                                                class="cpp plain">argc, </code><code
+                                                class="cpp color1 bold">char</code><code
+                                                class="cpp plain">* argv[])</code></div>
+                                        <div class="line number8 index7 alt1"><code
+                                                class="cpp plain">{</code></div>
+                                        <div class="line number9 index8 alt2"><code
+                                                class="cpp spaces">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">cout
+                                            &lt;&lt; </code><code class="cpp string">"8&nbsp; % 4&nbsp;
+                                            = "</code> <code class="cpp plain">&lt;&lt; 8 % 4&nbsp;&nbsp;
+                                            &lt;&lt; endl; </code><code class="cpp comments">//
+                                            выполнение операции "остаток от деления" </code></div>
+                                        <div class="line number10 index9 alt1"><code
+                                                class="cpp spaces">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">cout
+                                            &lt;&lt; </code><code class="cpp string">"7&nbsp; % 4&nbsp;
+                                            = "</code> <code class="cpp plain">&lt;&lt; 7 % 4&nbsp;&nbsp;
+                                            &lt;&lt; endl;</code></div>
+                                        <div class="line number11 index10 alt2"><code
+                                                class="cpp spaces">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">cout
+                                            &lt;&lt; </code><code class="cpp string">"2&nbsp; % 4&nbsp;
+                                            = "</code> <code class="cpp plain">&lt;&lt; 2 % 4&nbsp;&nbsp;
+                                            &lt;&lt; endl;</code></div>
+                                        <div class="line number12 index11 alt1"><code
+                                                class="cpp spaces">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">cout
+                                            &lt;&lt; </code><code class="cpp string">"43 % 10 =
+                                            "</code> <code class="cpp plain">&lt;&lt; 43 % 10 &lt;&lt;
+                                            endl;</code></div>
+                                        <div class="line number13 index12 alt2"><code
+                                                class="cpp spaces">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                class="cpp functions bold">system</code><code
+                                                class="cpp plain">(</code><code class="cpp string">"pause"</code><code
+                                                class="cpp plain">);</code></div>
+                                        <div class="line number14 index13 alt1"><code
+                                                class="cpp spaces">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                class="cpp keyword bold">return</code> <code
+                                                class="cpp plain">0;</code></div>
+                                        <div class="line number15 index14 alt2"><code
+                                                class="cpp plain">}</code></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <a href="5_2">начать!</a>
+                <p style="text-align: justify;"><span style="line-height: 1.428571429;">Результат работы программы, выполняющей операцию «</span><strong
+                        style="line-height: 1.428571429;">остаток от деления</strong><span
+                        style="line-height: 1.428571429;">» смотреть на рисунке 2.</span></p>
+                <div class="code_window">
+                    <div class="code_window_title">CppStudio.com</div>
+                    <div class="code_window_content">
+<pre>8  % 4  = 0
+7  % 4  = 3
+2  % 4  = 2
+43 % 10 = 3
+Для продолжения нажмите любую клавишу . . .</pre>
+                    </div>
+                </div>
+                <p style="text-align: center;">Рисунок 2 — Арифметические операции C++</p>
+                <ul>
+                    <li><span class="label label-inverse">1-й случай:</span>&nbsp; четверка может
+                        два раза поместиться в восьмерке остаток будет равен 0;
+                    </li>
+                    <li><span class="label label-inverse">2-й случай:</span>&nbsp; четверка может
+                        один раз поместиться в семерке и остаток будет равен 3;
+                    </li>
+                    <li><span class="label label-inverse">3-й случай:</span>&nbsp; четверка в двойке
+                        поместиться не может по этому остаток будет равен 2;
+                    </li>
+                    <li><span class="label label-inverse">4-й случай:</span> десять может четыре
+                        раза поместиться в сорока трех, и остаток будет равен 3;
+                    </li>
+                </ul>
+                <p style="text-align: justify;">Рассмотрев 4-ре случая использования операции —
+                    остаток от деления, надеюсь, вам стал понятен принцип работы этой операции. Если
+                    же нет, то&nbsp;поэкспериментируйте&nbsp;с программой, изменяйте числа и увидите
+                    как меняется результат.</p>
+            </div>
+
+
+            <div class="col-lg-12" style="padding: 0;">
+                <script async=""
+                        src="./Введение в основы C++ для начинающих программистов_files/"></script>
+                <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px"
+                     data-ad-client="ca-pub-6902622887579208" data-ad-slot="4341119372"></ins>
+                <script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+
+                </script>
+            </div>
+        </article>
+    </div>
+</div>
+<div></div>
+</body>
+</html>

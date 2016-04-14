@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://cppstudio.com/post/213/ -->
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="ru-RU"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>Введение в основы C++ для начинающих программистов</title>
+
+            <div class="content row" style="
+        max-width: 100%;
+    overflow-x: hidden;
+">
+                <div class="main col-sm-9" role="main">
+                    
+	
+	<article class="post-213 post type-post status-publish format-standard has-post-thumbnail hentry category-275 category-274">
+		<header>
+			<div class="post-title">
+				<h1 class="entry-title">Введение в C++</h1>
+			</div>
+		</header>
+
+					
+
+		<div class="col-lg-12" style="padding: 0;">
+	<script async="" src="./Введение в основы C++ для начинающих программистов_files/"></script>
+	<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-6902622887579208" data-ad-slot="2864386176"></ins>
+	<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+</div>
+<!--		-->
+        <div class="entry-content">
+            <p align="justify">В языке программирования С++ существует два оператора выбора:<br>
+                1)Оператор выбора&nbsp;<code>if</code><br>
+                2)&nbsp;<a href="http://cppstudio.com/obuchenie_cpp/operator-mnozhestvennogo-vybora">Оператор выбора <code>switch</code></a></p>
+            <p align="justify">Операторы выбора позволяют принять программе решение, основываясь на истинности или ложности условия. Если условие истинно (т. е. равно&nbsp;<code>true</code>) значит, оператор в теле&nbsp;<code>if</code>&nbsp;выполняется, после чего выполняется следующий по порядку оператор. Если условие ложно (т. е. равно&nbsp;<code>false</code>) значит, оператор в теле&nbsp;<code>if</code>&nbsp;не выполняется (игнорируется или пропускается) и сразу же выполняется следующий по порядку оператор. Проверяемое условие может быть любым логическим выражением. Логические выражения могут быть образованы операциями равенства и отношения (см. Таблица 1).</p>
+            <table class="table table-bordered table-striped table-hover" border="1" cellspacing="1" cellpadding="1" align="center">
+                <caption>Таблица 1 — Логические выражения C++</caption>
+                <thead>
+                <tr>
+                    <th scope="col"><strong>Операция в С++</strong></th>
+                    <th scope="col"><strong>Условие</strong></th>
+                    <th scope="col"><strong>Смысл записанных условий в С++</strong></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><strong>==</strong></td>
+                    <td>a<strong>&nbsp;==&nbsp;</strong>b</td>
+                    <td><code>a</code> равно <code>b</code></td>
+                </tr>
+                <tr>
+                    <td><strong>!=</strong></td>
+                    <td>a&nbsp;<strong>!=</strong>&nbsp;b</td>
+                    <td><code>a</code> не равно <code>b</code></td>
+                </tr>
+                <tr>
+                    <td><strong>&gt;</strong></td>
+                    <td>a&nbsp;<strong>&gt;</strong>&nbsp;b</td>
+                    <td><code>a</code> больше <code>b</code></td>
+                </tr>
+                <tr>
+                    <td><strong>&lt;</strong></td>
+                    <td>a&nbsp;<strong>&lt;</strong>&nbsp;b</td>
+                    <td><code>a</code> меньше <code>b</code></td>
+                </tr>
+                <tr>
+                    <td><strong>&gt;=</strong></td>
+                    <td>a&nbsp;<strong>&gt;=</strong>&nbsp;b</td>
+                    <td><code>a</code> больше или равно <code>b</code></td>
+                </tr>
+                <tr>
+                    <td><strong>&lt;=</strong></td>
+                    <td>a&nbsp;<strong>&lt;=</strong>&nbsp;b</td>
+                    <td><code>a</code> меньше или равно <code>b</code></td>
+                </tr>
+                </tbody>
+            </table>
+            <p style="text-align: justify;" align="justify">Очень частой ошибкой программирования является неправильная запись операций равенства и соотношений. Пробелов между знаками&nbsp;<code>==</code>;&nbsp;<code>!=</code>;&nbsp;<code>&gt;=</code>;&nbsp;<code>&lt;=</code>; быть не должно. Также необходимо помнить правильную последовательность записи символов операций равенства и отношений.<br>
+                Пример:<br>
+                <code>=!</code>&nbsp;<span class="label label-important">не правильно;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>!=</code>&nbsp;<span class="label label-success">правильная запись;</span><br>
+                <code>=&gt;</code>&nbsp;<span class="label label-important">не правильно;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <code>&gt;=</code>&nbsp;<span class="label label-success">правильная запись;</span><br>
+                <code>=&lt;</code>&nbsp;<span class="label label-important">не правильно;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <code>&lt;=</code>&nbsp;<span class="label label-success">правильная запись.</span><br>
+                Нельзя путать операцию <code>=</code> (операция присваивания) и операцию <code>==</code> (операция равенства) так как это приводит к логическим ошибкам, т. е. программа даже скомпилируется без всяких ошибок, но работать будет не правильно.<br>
+                Условный оператор или оператор выбора&nbsp;<code>if</code>&nbsp;записывается в двух формах, рассмотрим первую.</p><!-- adman_adcode (middle, 1) --><!-- Яндекс.Директ -->
+            <div id="yandex_ad_center"></div>
+            <script type="text/javascript">
+(function(w, d, n, s, t) {
+    w[n] = w[n] || [];
+    w[n].push(function() {
+        Ya.Direct.insertInto(142193, "yandex_ad_center", {
+            ad_format: "direct",
+                    font_size: '14px',
+                    type: "728x90",
+                    links_underline: false,
+                    site_bg_color: "FFFFFF",
+                    title_color: "428BCA",
+                    url_color: "777777",
+                    text_color: "333333",
+                    hover_color: "0088CC",
+                    favicon: true,
+                    no_sitelinks: false
+        });
+    });
+    t = d.getElementsByTagName("script")[0];
+    s = d.createElement("script");
+    s.src = "//an.yandex.ru/system/context.js";
+    s.type = "text/javascript";
+    s.async = true;
+    t.parentNode.insertBefore(s, t);
+})(window, document, "yandex_context_callbacks");
+</script><!-- /adman_adcode (middle) -->
+            <div><div id="highlighter_786607" class="syntaxhighlighter notranslate no_translate cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp keyword bold">if</code> <code class="cpp plain">(</code><code class="cpp comments">/*проверяемое условие*/</code><code class="cpp plain">)</code></div><div class="line number2 index1 alt1"><code class="cpp plain">{</code></div><div class="line number3 index2 alt2"><code class="cpp comments">//тело условного оператора</code></div><div class="line number4 index3 alt1"><code class="cpp plain">}</code></div></div></td></tr></tbody></table></div></div>
+            <p style="text-align: justify;">Фигурные скобочки тела условного оператора можно опускать, если при истинности условия необходимо выполнить один оператор. Пример:</p>
+            <div><div id="highlighter_36341" class="syntaxhighlighter notranslate no_translate cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp keyword bold">if</code> <code class="cpp plain">(</code><code class="cpp comments">/*проверяемое условие*/</code><code class="cpp plain">)</code></div><div class="line number2 index1 alt1"><code class="cpp comments">/*оператор1*/</code><code class="cpp plain">;</code></div></div></td></tr></tbody></table></div></div>
+            <p style="text-align: justify;">Чтобы в будущем не путаться рекомендую всегда прописывать фигурные скобочки, так код будет более понятен.<br>
+                Рассмотрим простейший пример использования оператора <code>if</code>. Условие задачи: даны два числа, необходимо их сравнить.</p>
+            <div><div id="highlighter_233135" class="syntaxhighlighter notranslate no_translate cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div><div class="line number16 index15 alt1">16</div><div class="line number17 index16 alt2">17</div><div class="line number18 index17 alt1">18</div><div class="line number19 index18 alt2">19</div><div class="line number20 index19 alt1">20</div><div class="line number21 index20 alt2">21</div><div class="line number22 index21 alt1">22</div><div class="line number23 index22 alt2">23</div><div class="line number24 index23 alt1">24</div><div class="line number25 index24 alt2">25</div><div class="line number26 index25 alt1">26</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp comments">// in_out.cpp: определяет точку входа для консольного приложения.</code></div><div class="line number2 index1 alt1">&nbsp;</div><div class="line number3 index2 alt2"><code class="cpp preprocessor">#include "stdafx.h"</code></div><div class="line number4 index3 alt1"><code class="cpp preprocessor">#include &lt;iostream&gt;</code></div><div class="line number5 index4 alt2"><code class="cpp keyword bold">using</code> <code class="cpp keyword bold">namespace</code> <code class="cpp plain">std;</code></div><div class="line number6 index5 alt1">&nbsp;</div><div class="line number7 index6 alt2"><code class="cpp color1 bold">int</code> <code class="cpp plain">main()</code></div><div class="line number8 index7 alt1"><code class="cpp plain">{</code></div><div class="line number9 index8 alt2"><code class="cpp spaces">&nbsp;</code><code class="cpp color1 bold">int</code> <code class="cpp plain">a, b; </code><code class="cpp comments">// объявление переменных типа int, то есть в таких переменных хранятся только целые числа</code></div><div class="line number10 index9 alt1"><code class="cpp spaces">&nbsp;</code><code class="cpp plain">cout &lt;&lt; </code><code class="cpp string">"Vvedite pervoe chislo: "</code><code class="cpp plain">;</code></div><div class="line number11 index10 alt2"><code class="cpp spaces">&nbsp;</code><code class="cpp plain">cin &gt;&gt; a;</code></div><div class="line number12 index11 alt1"><code class="cpp spaces">&nbsp;</code><code class="cpp plain">cout &lt;&lt; </code><code class="cpp string">"Vvedite vtoroe chislo: "</code><code class="cpp plain">;</code></div><div class="line number13 index12 alt2"><code class="cpp spaces">&nbsp;</code><code class="cpp plain">cin &gt;&gt; b;</code></div><div class="line number14 index13 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">if</code> <code class="cpp plain">(a &gt; b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </code><code class="cpp comments">// если а &gt; b</code></div><div class="line number15 index14 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">{</code></div><div class="line number16 index15 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">cout &lt;&lt; a &lt;&lt; </code><code class="cpp string">" &gt; "</code> <code class="cpp plain">&lt;&lt; b &lt;&lt; endl; </code><code class="cpp comments">// печатать данное сообщение</code></div><div class="line number17 index16 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">}</code></div><div class="line number18 index17 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">if</code> <code class="cpp plain">(a &lt; b)</code><code class="cpp comments">// если а &lt; b</code></div><div class="line number19 index18 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">{</code></div><div class="line number20 index19 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">cout &lt;&lt; a &lt;&lt; </code><code class="cpp string">" &lt; "</code> <code class="cpp plain">&lt;&lt; b &lt;&lt; endl;</code></div><div class="line number21 index20 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">}</code></div><div class="line number22 index21 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">if</code> <code class="cpp plain">(a == b) </code><code class="cpp comments">// если а = b</code></div><div class="line number23 index22 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">cout &lt;&lt; a &lt;&lt; </code><code class="cpp string">" = "</code> <code class="cpp plain">&lt;&lt; b &lt;&lt; endl; </code><code class="cpp comments">// в теле условного оператора опущены фигурные скобочки</code></div><div class="line number24 index23 alt1"><code class="cpp spaces">&nbsp;</code><code class="cpp functions bold">system</code><code class="cpp plain">(</code><code class="cpp string">"pause"</code><code class="cpp plain">);</code></div><div class="line number25 index24 alt2"><code class="cpp spaces">&nbsp;</code><code class="cpp keyword bold">return</code> <code class="cpp plain">0;</code></div><div class="line number26 index25 alt1"><code class="cpp plain">}</code></div></div></td></tr></tbody></table></div></div>
+            <p style="text-align: justify;">Все с&nbsp;<strong>1-й по 8-ю</strong>&nbsp;<strong>строки</strong>&nbsp;вам должно быть понятно. В&nbsp;<strong>строке 9</strong>&nbsp;объявляются две переменные – это мы уже знаем. Но появилось новое слово&nbsp;<code>int</code>&nbsp;–это целочисленный&nbsp;<a href="http://cppstudio.com/obuchenie_cpp/tipy_dannyh">тип данных</a>. То есть может содержать такие числа:&nbsp;<strong>-3</strong>;&nbsp;<strong>2</strong>;&nbsp;<strong>678</strong>;<strong>-341</strong>. Целочисленный тип данных может хранить только целые числа. После того как мы ввели два числа программа начинает их сравнивание. Так как мы не знаем, какие числа введет пользователь, мы должны предусмотреть все случаи. А случая здесь может быть аж три:</p>
+            <p style="text-align: justify;"><strong>1-й случай:</strong>&nbsp;первое введенное число больше второго. (<strong>14-16 строки</strong>)<br>
+                Читается так: «Если&nbsp;<code>а</code>&nbsp;больше&nbsp;<code>b</code>, то делать соответствующий вывод на экран»<br>
+                <strong>2-й случай:</strong>&nbsp;первое введенное число меньше второго. (<strong>17-19 строки</strong>)<br>
+                Читается так: «Если,&nbsp;<code>а</code>&nbsp;меньше&nbsp;<code>b</code>, то делать соответствующий вывод на экран»<br>
+                <strong>3-й случай:</strong>&nbsp;первое введенное число равняется второму. (<strong>20-21 строки</strong>)<br>
+                Читается так: «Если,&nbsp;<code>а</code>&nbsp;равно&nbsp;<code>b</code>, то делать соответствующий вывод на экран»</p>
+            <p style="text-align: justify;">Обратите внимание на то что, первые два ифа написаны вместе с фигурными скобочками, хотя можно было обойтись и без них, ведь при истинном условии у нас выполняется только оператор вывода. А в третьем ифе я обошелся без скобочек, тем самым показал, что программа будет работать правильно и без них. Еще одну логическую ошибку часто делают, когда ставят точку с запятой сразу за правой круглой скобкой оператора&nbsp;<code>if</code>.<br>
+                Пример:</p>
+            <div><div id="highlighter_813075" class="syntaxhighlighter notranslate no_translate cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp keyword bold">if</code> <code class="cpp plain">(a == b); </code><code class="cpp comments">// логическая ОШИБКА</code></div><div class="line number2 index1 alt1"><code class="cpp plain">cout &lt;&lt; a &lt;&lt; </code><code class="cpp string">" = "</code> <code class="cpp plain">&lt;&lt; b &lt;&lt; endl;</code></div></div></td></tr></tbody></table></div></div>
+            <p style="text-align: justify;">В этом случае программ скомпилируется и запустится, но уже будет работать не правильно. Ошибка заключается в том, что у данного ифа уже нет оператора входящего в его тело, то есть&nbsp;<code>if</code>&nbsp;пустой. И уже неважно истинно условие или нет оператор вывода&nbsp;<code>cout &lt;&lt; a &lt;&lt; " = " &lt;&lt; b &lt;&lt; endl;</code>&nbsp;будет срабатывать всегда.&nbsp;Ниже показан пример работы программы использующий оператор выбора&nbsp;<code>if</code>&nbsp;для частного случая (см. Рисунок 1).</p>
+            <div class="code_window">
+                <div class="code_window_title">CppStudio.com</div>
+                <div class="code_window_content">
+<pre>Vvedite pervoe chislo: 19
+Vvedite vtoroe chislo: -8
+19 &gt; -8
+Для продолжения нажмите любую клавишу . . .</pre>
+                </div>
+            </div>
+            <p style="text-align: center;">Рисунок 1 — Оператор выбора if в C++</p>
+        </div>
+
+		
+		
+		<div class="col-lg-12" style="padding: 0;">
+	<script async="" src="./Введение в основы C++ для начинающих программистов_files/"></script>
+	<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-6902622887579208" data-ad-slot="4341119372"></ins>
+	<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+</div>
+							</body></html>
